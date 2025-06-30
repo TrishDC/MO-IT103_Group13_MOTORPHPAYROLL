@@ -646,6 +646,12 @@ public class NewEmployee extends javax.swing.JFrame {
             };
 
             // Append to CSV file using utility
+    
+            EmployeeUtil.initializeEmployeeCSV("src/MotorPH_CSVFiles/Emp_Details.csv");
+            
+            // Append to CSV file using utility
+            EmployeeUtil.appendCSVRow("src/MotorPH_CSVFiles/Emp_Details.csv", newEmployeeRow);
+
             EmployeeUtil.appendCSVRow("Emp_Details.csv", newEmployeeRow);
 
             return true;
